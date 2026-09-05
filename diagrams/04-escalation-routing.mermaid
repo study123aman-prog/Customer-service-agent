@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph T[Escalation triggers]
+        F[Fraud / stolen card]
+        CR[Self-harm / crisis]
+        HR[Explicit human request]
+        GRV[Grievance / complaint]
+        REG[Advice / loan / PEP / AML]
+        KBF[KB stale or missing]
+        SENT[High frustration / repeat contact]
+    end
+
+    F --> P0[P0 - immediate]
+    CR --> P0
+    HR --> P1[P1 - priority]
+    GRV --> P1
+    REG --> P1
+    KBF --> P2[P2 - standard]
+    SENT --> P2
+
+    P0 --> SEC[Security / fraud desk]
+    P1 --> SPEC[Specialist / compliance / relationship team]
+    P2 --> GENQ[General support queue]
+
+    SEC --> PKG[Handoff package - masked context, intent, history, reason]
+    SPEC --> PKG
+    GENQ --> PKG

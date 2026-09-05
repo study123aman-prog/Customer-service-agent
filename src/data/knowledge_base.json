@@ -1,0 +1,1780 @@
+[
+  {
+    "id": "KB-PRD-001",
+    "category": "product",
+    "title": "NexSave Savings Account",
+    "body": "The NexSave Savings Account offers 4.5% annual interest, zero minimum balance, and instant UPI. Deposits are insured by DICGC up to Rs 5 lakh.",
+    "structured": {
+      "interest_rate_pct": 4.5,
+      "min_balance": 0,
+      "dicgc_cover": 500000
+    },
+    "keywords": [
+      "nexsave",
+      "savings account",
+      "zero balance",
+      "upi",
+      "dicgc"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "ACC-007"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-002",
+    "category": "product",
+    "title": "NexFD Fixed Deposit — rates",
+    "body": "NexFD offers 6.0% to 7.25% depending on tenure (7 days to 10 years). Senior citizens get an additional 0.50%. TDS applies as per IT rules.",
+    "structured": {
+      "rate_min_pct": 6.0,
+      "rate_max_pct": 7.25,
+      "senior_bonus_pct": 0.5,
+      "tenure_min": "7 days",
+      "tenure_max": "10 years"
+    },
+    "keywords": [
+      "nexfd",
+      "fixed deposit",
+      "fd rate",
+      "tenure",
+      "senior citizen",
+      "tds"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 7,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Treasury rate sheet",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-003",
+    "category": "product",
+    "title": "NexFD 1-year rate",
+    "body": "The NexFD rate for a 1-year tenure is 6.5% per annum for regular customers and 7.0% for senior citizens.",
+    "structured": {
+      "tenure": "1 year",
+      "rate_pct": 6.5,
+      "senior_rate_pct": 7.0
+    },
+    "keywords": [
+      "fd 1 year",
+      "one year fd",
+      "fixed deposit rate",
+      "6.5"
+    ],
+    "related_intents": [
+      "PRD-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 7,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Treasury rate sheet",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-004",
+    "category": "product",
+    "title": "NexRD Recurring Deposit",
+    "body": "NexRD lets you save a fixed amount monthly from Rs 500. Rates match the equivalent FD tenure. Missed installments attract a small penalty.",
+    "structured": {
+      "min_monthly": 500,
+      "rate_basis": "equivalent FD tenure"
+    },
+    "keywords": [
+      "nexrd",
+      "recurring deposit",
+      "rd",
+      "monthly saving"
+    ],
+    "related_intents": [
+      "PRD-003",
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-005",
+    "category": "product",
+    "title": "NexCredit Card — Classic",
+    "body": "The NexCredit Classic card has a 40-day interest-free period, 2% cashback, and no annual fee in the first year. Requires income proof and a credit score check.",
+    "structured": {
+      "interest_free_days": 40,
+      "cashback_pct": 2,
+      "annual_fee_year1": 0
+    },
+    "keywords": [
+      "nexcredit classic",
+      "credit card",
+      "cashback",
+      "no annual fee"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "CRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-006",
+    "category": "product",
+    "title": "NexCredit Card — Premium",
+    "body": "The NexCredit Premium card offers a 50-day interest-free period, airport lounge access, and 5x reward points. Minimum income 10 LPA and enhanced KYC required.",
+    "structured": {
+      "interest_free_days": 50,
+      "rewards_multiplier": 5,
+      "min_income_lpa": 10
+    },
+    "keywords": [
+      "nexcredit premium",
+      "lounge access",
+      "5x rewards",
+      "premium card"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "CRD-003",
+      "CRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-007",
+    "category": "product",
+    "title": "Credit card EMI conversion",
+    "body": "Eligible purchases above Rs 2,500 can be converted to EMI over 3 to 24 months. A one-time processing fee and interest apply; the exact schedule is shown before you confirm.",
+    "structured": {
+      "min_amount": 2500,
+      "tenure_min_months": 3,
+      "tenure_max_months": 24
+    },
+    "keywords": [
+      "emi conversion",
+      "convert to emi",
+      "installments",
+      "credit card emi"
+    ],
+    "related_intents": [
+      "CRD-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Cards policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-008",
+    "category": "product",
+    "title": "Reward points redemption",
+    "body": "Reward points can be redeemed for statement credit, vouchers, or products in the NexRewards catalogue. Points expire 24 months after they are earned.",
+    "structured": {
+      "expiry_months": 24,
+      "redeem_options": [
+        "statement credit",
+        "vouchers",
+        "catalogue"
+      ]
+    },
+    "keywords": [
+      "reward points",
+      "redeem",
+      "cashback balance",
+      "points expiry"
+    ],
+    "related_intents": [
+      "CRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexRewards T&C",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-009",
+    "category": "product",
+    "title": "NexHome Loan",
+    "body": "NexHome Loans start at 8.25% with tenure up to 30 years and up to 90% loan-to-value. Requires CIBIL above 700, property valuation, and legal check.",
+    "structured": {
+      "rate_from_pct": 8.25,
+      "tenure_max_years": 30,
+      "max_ltv_pct": 90,
+      "min_cibil": 700
+    },
+    "keywords": [
+      "nexhome",
+      "home loan",
+      "housing loan",
+      "ltv",
+      "cibil"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Lending policy",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-010",
+    "category": "product",
+    "title": "NexPersonal Loan",
+    "body": "NexPersonal Loans start at 10.5% with tenure up to 5 years and instant disbursal for pre-approved customers. Requires CIBIL above 650 and income verification.",
+    "structured": {
+      "rate_from_pct": 10.5,
+      "tenure_max_years": 5,
+      "min_cibil": 650
+    },
+    "keywords": [
+      "nexpersonal",
+      "personal loan",
+      "instant loan",
+      "disbursal"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Lending policy",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-011",
+    "category": "product",
+    "title": "Home loan EMI example",
+    "body": "Illustrative only: a Rs 20 lakh home loan at 8.5% for 20 years is approximately Rs 17,356 per month. Your actual EMI depends on the sanctioned rate and tenure.",
+    "structured": {
+      "principal": 2000000,
+      "rate_pct": 8.5,
+      "tenure_years": 20,
+      "emi_approx": 17356
+    },
+    "keywords": [
+      "emi",
+      "home loan emi",
+      "20 lakh",
+      "monthly installment"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank EMI calculator",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-012",
+    "category": "product",
+    "title": "Loan eligibility factors",
+    "body": "Loan eligibility considers income, existing obligations (FOIR), CIBIL score, employment stability, and property value for secured loans. We can share factual criteria; final approval is subject to assessment.",
+    "structured": {
+      "factors": [
+        "income",
+        "FOIR",
+        "CIBIL",
+        "employment",
+        "collateral"
+      ]
+    },
+    "keywords": [
+      "loan eligibility",
+      "qualify",
+      "criteria",
+      "foir"
+    ],
+    "related_intents": [
+      "PRD-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Lending policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-013",
+    "category": "product",
+    "title": "NexProtect Term Insurance",
+    "body": "NexProtect term insurance covers life risk up to Rs 1 crore with online-only pricing advantage. A medical check is required for cover above Rs 50 lakh. IRDAI regulated.",
+    "structured": {
+      "max_cover": 10000000,
+      "medical_check_above": 5000000
+    },
+    "keywords": [
+      "nexprotect",
+      "term insurance",
+      "life cover",
+      "irdai"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": "IRDAI-AI-2024",
+    "authority_source": "NexBank Insurance (IRDAI filing)",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-014",
+    "category": "product",
+    "title": "NexInvest Mutual Funds",
+    "body": "NexInvest is a direct mutual fund platform with SIPs from Rs 100 across equity, debt, and hybrid funds from partner AMCs. SEBI regulated; KYC and risk disclosure mandatory. Personalised advice requires a SEBI-registered advisor.",
+    "structured": {
+      "sip_min": 100,
+      "fund_types": [
+        "equity",
+        "debt",
+        "hybrid"
+      ]
+    },
+    "keywords": [
+      "nexinvest",
+      "mutual fund",
+      "sip",
+      "amc",
+      "sebi"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": "SEBI-ROBO-2024",
+    "authority_source": "NexBank Wealth (SEBI)",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-015",
+    "category": "product",
+    "title": "NexGold Digital Gold",
+    "body": "NexGold lets you buy 24K gold from Rs 10 with an option for physical delivery, via an MMTC-PAMP partnership. Physical delivery uses insured logistics.",
+    "structured": {
+      "min_amount": 10,
+      "purity": "24K",
+      "partner": "MMTC-PAMP"
+    },
+    "keywords": [
+      "nexgold",
+      "digital gold",
+      "24k",
+      "gold investment"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-016",
+    "category": "product",
+    "title": "Tax benefits — Section 80C",
+    "body": "Tax-saving FDs and certain instruments offer benefits under Section 80C up to Rs 1.5 lakh per year. This is general information, not tax advice; consult a tax professional for your situation.",
+    "structured": {
+      "section": "80C",
+      "limit": 150000
+    },
+    "keywords": [
+      "80c",
+      "tax benefit",
+      "tax saving fd",
+      "deduction"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "Income Tax Act (general)",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-001",
+    "category": "policy",
+    "title": "Zero-liability on unauthorised transactions",
+    "body": "Under NexBank's zero-liability policy, you are protected against unauthorised transactions if reported promptly. Report immediately so we can block the card and investigate.",
+    "structured": {
+      "customer_liability": "zero if reported promptly"
+    },
+    "keywords": [
+      "zero liability",
+      "unauthorised",
+      "fraud protection",
+      "report"
+    ],
+    "related_intents": [
+      "SEC-001",
+      "TXN-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": "RBI-DPSC-2024",
+    "authority_source": "RBI customer liability framework",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-002",
+    "category": "policy",
+    "title": "Transaction dispute process",
+    "body": "Disputes are acknowledged immediately and typically investigated within 7 working days. Provisional credit may be issued per policy. You will receive updates by SMS and can track via a complaint ID.",
+    "structured": {
+      "investigation_days": 7,
+      "provisional_credit": "as per policy"
+    },
+    "keywords": [
+      "dispute",
+      "chargeback",
+      "investigation",
+      "refund timeline"
+    ],
+    "related_intents": [
+      "TXN-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Disputes policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-003",
+    "category": "policy",
+    "title": "UPI deemed-success auto-reversal",
+    "body": "If money is debited but the beneficiary is not credited, RBI's deemed-success rule requires auto-reversal, typically within 48 hours (T+1). If not reversed, compensation may apply.",
+    "structured": {
+      "auto_reversal_hours": 48,
+      "rule": "RBI deemed success"
+    },
+    "keywords": [
+      "upi failure",
+      "deemed success",
+      "auto reversal",
+      "money deducted"
+    ],
+    "related_intents": [
+      "TXN-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "RBI-DPSC-2024",
+    "authority_source": "RBI TAT harmonisation circular",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-004",
+    "category": "policy",
+    "title": "Card blocking and liability window",
+    "body": "Blocking a card is immediate and irreversible for that card number; a replacement is issued. Transactions after a confirmed block are the bank's liability.",
+    "structured": {
+      "block": "immediate",
+      "replacement": "issued"
+    },
+    "keywords": [
+      "block card",
+      "card block",
+      "liability",
+      "replacement"
+    ],
+    "related_intents": [
+      "CRD-001",
+      "CRD-002",
+      "SEC-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Cards policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-005",
+    "category": "policy",
+    "title": "Account closure process",
+    "body": "Closure requires clearing dues, zeroing balance, and identity verification; high-value accounts and certain products need branch confirmation. A cooling-off contact is made before final closure.",
+    "structured": {
+      "requires": [
+        "nil balance",
+        "dues cleared",
+        "verification"
+      ],
+      "branch_for_highvalue": true
+    },
+    "keywords": [
+      "close account",
+      "closure",
+      "terminate account"
+    ],
+    "related_intents": [
+      "ACC-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Account policy",
+    "min_auth_level": "full_kyc",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-006",
+    "category": "policy",
+    "title": "KYC update requirements",
+    "body": "KYC updates (address, contact, nominee) require valid proof documents and step-up authentication. We accept document types only in chat; never share full ID numbers.",
+    "structured": {
+      "auth": "biometric or full KYC",
+      "proof": "required"
+    },
+    "keywords": [
+      "kyc update",
+      "address proof",
+      "documents",
+      "nominee"
+    ],
+    "related_intents": [
+      "ACC-003",
+      "ACC-004",
+      "ACC-006"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 60,
+    "regulatory_tag": "RBI-KYC-MD",
+    "authority_source": "RBI KYC Master Direction",
+    "min_auth_level": "biometric_verified",
+    "sensitivity": "internal",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-007",
+    "category": "policy",
+    "title": "Statement availability",
+    "body": "Statements are available for the last 10 years in the app and by email. Formats: PDF and Excel. E-statements are free; physical copies may carry a fee.",
+    "structured": {
+      "history_years": 10,
+      "formats": [
+        "PDF",
+        "Excel"
+      ],
+      "estatement_fee": 0
+    },
+    "keywords": [
+      "statement",
+      "estatement",
+      "transaction history",
+      "pdf"
+    ],
+    "related_intents": [
+      "ACC-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Account policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-008",
+    "category": "policy",
+    "title": "Standing instructions / recurring payments",
+    "body": "You can set up, modify, or cancel standing instructions. Setup and modification of a mandate require step-up authentication. Cancellations take effect before the next scheduled debit if requested in time.",
+    "structured": {
+      "auth_setup": "biometric",
+      "cancel_cutoff": "before next debit"
+    },
+    "keywords": [
+      "standing instruction",
+      "recurring payment",
+      "autopay",
+      "mandate"
+    ],
+    "related_intents": [
+      "TXN-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Payments policy",
+    "min_auth_level": "biometric_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-009",
+    "category": "policy",
+    "title": "International transfer limits & docs",
+    "body": "Outward remittances follow the RBI Liberalised Remittance Scheme (LRS) limit per financial year and require purpose code and full KYC. Charges and FX rates are shown before confirmation.",
+    "structured": {
+      "scheme": "LRS",
+      "requires": [
+        "purpose code",
+        "full KYC"
+      ]
+    },
+    "keywords": [
+      "international transfer",
+      "remittance",
+      "lrs",
+      "forex",
+      "abroad"
+    ],
+    "related_intents": [
+      "TXN-006"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "RBI-LRS",
+    "authority_source": "RBI LRS master direction",
+    "min_auth_level": "full_kyc",
+    "sensitivity": "internal",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-010",
+    "category": "policy",
+    "title": "Credit limit change policy",
+    "body": "Credit limit increases are subject to income proof and risk assessment; decreases are usually immediate. Temporary limit increases are available for eligible customers.",
+    "structured": {
+      "increase": "assessment + income proof",
+      "decrease": "immediate"
+    },
+    "keywords": [
+      "credit limit",
+      "limit increase",
+      "limit decrease"
+    ],
+    "related_intents": [
+      "CRD-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Cards policy",
+    "min_auth_level": "biometric_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-011",
+    "category": "policy",
+    "title": "Grievance redressal mechanism",
+    "body": "If dissatisfied, you can escalate to our Nodal Officer, and if unresolved in 30 days, to the RBI Banking Ombudsman. Grievance contact details are provided within 2 turns of any complaint.",
+    "structured": {
+      "nodal_officer": true,
+      "ombudsman_after_days": 30
+    },
+    "keywords": [
+      "grievance",
+      "ombudsman",
+      "nodal officer",
+      "complaint escalation"
+    ],
+    "related_intents": [
+      "CMP-001",
+      "CMP-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": "RBI-BO-2006",
+    "authority_source": "Banking Ombudsman Scheme 2006",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-012",
+    "category": "policy",
+    "title": "Session security & timeout",
+    "body": "For your protection, sessions time out after 5 minutes of inactivity and require re-verification. We never ask for OTP, PIN, CVV, or passwords, and never call to request them.",
+    "structured": {
+      "timeout_minutes": 5,
+      "never_ask": [
+        "OTP",
+        "PIN",
+        "CVV",
+        "password"
+      ]
+    },
+    "keywords": [
+      "session timeout",
+      "security",
+      "otp",
+      "never share"
+    ],
+    "related_intents": [
+      "SEC-002",
+      "SEC-003",
+      "SEC-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Security policy",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-001",
+    "category": "regulatory",
+    "title": "Investment advice requires SEBI advisor",
+    "body": "NexBank can provide factual product information but cannot give personalised investment advice. Personalised recommendations require a SEBI-registered investment adviser; we offer a free advisor consultation.",
+    "structured": {
+      "rule": "info allowed, personalised advice needs SEBI RIA"
+    },
+    "keywords": [
+      "investment advice",
+      "sebi",
+      "advisor",
+      "recommendation",
+      "robo advisory"
+    ],
+    "related_intents": [
+      "PRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "SEBI-ROBO-2024",
+    "authority_source": "SEBI (Investment Advisers) Regulations",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-002",
+    "category": "regulatory",
+    "title": "Mandatory product disclosures (RBI DLG)",
+    "body": "All product information must include interest rates, fees, and key terms. New sign-ups include a cooling-off period. No high-pressure sales or artificial urgency is permitted.",
+    "structured": {
+      "disclose": [
+        "rate",
+        "fees",
+        "terms"
+      ],
+      "cooling_off": true
+    },
+    "keywords": [
+      "disclosure",
+      "cooling off",
+      "digital lending",
+      "rbi guidelines"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "PRD-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "RBI-DLG-2022",
+    "authority_source": "RBI Digital Lending Guidelines 2022",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-003",
+    "category": "regulatory",
+    "title": "PCI DSS card data handling",
+    "body": "Card numbers are masked to the last 4 digits in all display and logging. CVV/CVC is never requested, stored, or displayed. Payment conversations get enhanced audit logging.",
+    "structured": {
+      "mask": "last 4",
+      "cvv": "never",
+      "logging": "enhanced"
+    },
+    "keywords": [
+      "pci dss",
+      "card masking",
+      "cvv",
+      "card data"
+    ],
+    "related_intents": [
+      "TXN-002",
+      "CRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "PCI-DSS-4.0",
+    "authority_source": "PCI DSS v4.0",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-004",
+    "category": "regulatory",
+    "title": "KYC/AML obligations",
+    "body": "Identity must be verified before sharing account-specific information. Suspicious patterns are flagged to the AML team, and requests that could facilitate money laundering are refused. PEP status triggers enhanced due diligence.",
+    "structured": {
+      "verify_before_data": true,
+      "pep": "enhanced due diligence"
+    },
+    "keywords": [
+      "kyc",
+      "aml",
+      "money laundering",
+      "pep",
+      "due diligence"
+    ],
+    "related_intents": [
+      "SEC-004",
+      "ACC-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "RBI-KYC-MD",
+    "authority_source": "RBI KYC/AML Master Direction",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-005",
+    "category": "regulatory",
+    "title": "Data protection & consent (DPDP)",
+    "body": "Customer data is processed lawfully with consent, minimised to what is needed, and retained per policy. Customers may request deletion, handled within 30 days per applicable rules.",
+    "structured": {
+      "consent": true,
+      "deletion_days": 30
+    },
+    "keywords": [
+      "data protection",
+      "dpdp",
+      "consent",
+      "privacy",
+      "deletion"
+    ],
+    "related_intents": [
+      "ACC-003",
+      "CMP-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 60,
+    "regulatory_tag": "DPDP-2023",
+    "authority_source": "Digital Personal Data Protection Act 2023",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-REG-006",
+    "category": "regulatory",
+    "title": "AI transparency disclosure",
+    "body": "Customers are told at the start that they are interacting with an AI assistant, may request a human at any time, and AI decisions affecting outcomes are explainable and auditable.",
+    "structured": {
+      "disclose_ai": true,
+      "human_on_request": true
+    },
+    "keywords": [
+      "ai disclosure",
+      "transparency",
+      "explainability",
+      "human agent"
+    ],
+    "related_intents": [
+      "GEN-001",
+      "GEN-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 60,
+    "regulatory_tag": "RBI-RESP-AI-2025",
+    "authority_source": "RBI Responsible AI (draft 2025)",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-001",
+    "category": "faq",
+    "title": "How to reset internet banking password",
+    "body": "Go to Login > Forgot Password, verify with OTP on your registered mobile, and set a new password. Never share OTP or password with anyone.",
+    "structured": {
+      "path": "Login > Forgot Password"
+    },
+    "keywords": [
+      "reset password",
+      "forgot password",
+      "internet banking login"
+    ],
+    "related_intents": [
+      "SEC-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-002",
+    "category": "faq",
+    "title": "How to set up UPI",
+    "body": "Open the app, go to UPI > Add Account, select your bank, verify your debit card details, and set a UPI PIN. Your UPI ID is created automatically.",
+    "structured": {
+      "path": "UPI > Add Account"
+    },
+    "keywords": [
+      "upi setup",
+      "create upi",
+      "upi pin",
+      "upi id"
+    ],
+    "related_intents": [
+      "TXN-003",
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-003",
+    "category": "faq",
+    "title": "What is IFSC and where to find it",
+    "body": "IFSC is an 11-character code identifying a bank branch for NEFT/RTGS/IMPS. Your IFSC is in the app under Account Details and on your cheque book.",
+    "structured": {
+      "ifsc_length": 11
+    },
+    "keywords": [
+      "ifsc",
+      "ifsc code",
+      "neft code",
+      "branch code"
+    ],
+    "related_intents": [
+      "TXN-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-004",
+    "category": "faq",
+    "title": "NEFT vs RTGS vs IMPS",
+    "body": "IMPS is instant and 24x7. NEFT settles in half-hourly batches. RTGS is real-time for high-value transfers (Rs 2 lakh and above). Choose based on amount and urgency.",
+    "structured": {
+      "imps": "instant 24x7",
+      "rtgs_min": 200000
+    },
+    "keywords": [
+      "neft",
+      "rtgs",
+      "imps",
+      "difference",
+      "transfer type"
+    ],
+    "related_intents": [
+      "TXN-004",
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-005",
+    "category": "faq",
+    "title": "How to update mobile number",
+    "body": "Updating your registered mobile requires biometric or full-KYC verification for security. Start the request and we will guide you through verification and proof.",
+    "structured": {
+      "auth": "biometric"
+    },
+    "keywords": [
+      "update mobile",
+      "change number",
+      "registered mobile"
+    ],
+    "related_intents": [
+      "ACC-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-006",
+    "category": "faq",
+    "title": "Are my deposits insured?",
+    "body": "Yes. Deposits are insured by DICGC up to Rs 5 lakh per depositor per bank, covering principal and interest.",
+    "structured": {
+      "dicgc_cover": 500000
+    },
+    "keywords": [
+      "deposit insurance",
+      "dicgc",
+      "safe",
+      "insured"
+    ],
+    "related_intents": [
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "DICGC",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-007",
+    "category": "faq",
+    "title": "How to check reward points",
+    "body": "Open the app > Cards > Rewards to see your points balance, earn history, and redemption options.",
+    "structured": {
+      "path": "Cards > Rewards"
+    },
+    "keywords": [
+      "check points",
+      "reward balance",
+      "points"
+    ],
+    "related_intents": [
+      "CRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-008",
+    "category": "faq",
+    "title": "How to raise a complaint",
+    "body": "You can raise a complaint here in chat, in the app under Help > Complaints, or by email. You will get a complaint ID to track progress.",
+    "structured": {
+      "channels": [
+        "chat",
+        "app",
+        "email"
+      ]
+    },
+    "keywords": [
+      "raise complaint",
+      "file complaint",
+      "grievance",
+      "ticket"
+    ],
+    "related_intents": [
+      "CMP-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-009",
+    "category": "faq",
+    "title": "Cheque book request",
+    "body": "Request a cheque book in the app under Services > Cheque Book. It is delivered to your registered address in 5-7 working days.",
+    "structured": {
+      "delivery_days": "5-7"
+    },
+    "keywords": [
+      "cheque book",
+      "chequebook",
+      "request cheque"
+    ],
+    "related_intents": [
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-010",
+    "category": "faq",
+    "title": "Nominee — why and how",
+    "body": "A nominee receives account proceeds in case of the account holder's demise, simplifying claims. Add or change a nominee with full-KYC verification and the nominee's details.",
+    "structured": {
+      "auth": "full KYC"
+    },
+    "keywords": [
+      "nominee",
+      "beneficiary",
+      "why nominee"
+    ],
+    "related_intents": [
+      "ACC-006"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "full_kyc",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-001",
+    "category": "troubleshooting",
+    "title": "UPI payment failed but money debited",
+    "body": "1) Do not retry immediately. 2) Check if the beneficiary received it. 3) Most debits without credit auto-reverse within 48 hours under RBI rules. 4) If not reversed, we raise a priority reversal request with the reference number.",
+    "structured": {
+      "steps": 4,
+      "auto_reversal_hours": 48
+    },
+    "keywords": [
+      "upi failed",
+      "money deducted",
+      "not received",
+      "reversal steps"
+    ],
+    "related_intents": [
+      "TXN-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": "RBI-DPSC-2024",
+    "authority_source": "NexBank Help + RBI",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-002",
+    "category": "troubleshooting",
+    "title": "Card declined at merchant",
+    "body": "Common causes: insufficient balance, limit reached, international usage disabled, or a temporary block. Check balance and limits, enable relevant usage in the app, and retry; if it persists we investigate.",
+    "structured": {
+      "causes": [
+        "balance",
+        "limit",
+        "intl disabled",
+        "block"
+      ]
+    },
+    "keywords": [
+      "card declined",
+      "payment failed",
+      "card not working"
+    ],
+    "related_intents": [
+      "CRD-001",
+      "TXN-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-003",
+    "category": "troubleshooting",
+    "title": "Not receiving OTP",
+    "body": "1) Check network/signal. 2) Ensure DND isn't blocking bank SMS. 3) Confirm your registered mobile is correct. 4) Request resend after 60 seconds. If it still fails, we offer an alternate verification path.",
+    "structured": {
+      "resend_after_seconds": 60
+    },
+    "keywords": [
+      "otp not received",
+      "no otp",
+      "otp issue"
+    ],
+    "related_intents": [
+      "SEC-003",
+      "ACC-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-004",
+    "category": "troubleshooting",
+    "title": "NEFT/RTGS not credited to beneficiary",
+    "body": "NEFT settles in batches and may take up to a few hours; RTGS is faster. Share the UTR so we can trace it. If beyond the expected window, we raise a trace with the beneficiary bank.",
+    "structured": {
+      "need": "UTR reference"
+    },
+    "keywords": [
+      "neft not credited",
+      "rtgs delayed",
+      "transfer pending",
+      "utr"
+    ],
+    "related_intents": [
+      "TXN-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-005",
+    "category": "troubleshooting",
+    "title": "App login not working",
+    "body": "Update to the latest app version, check internet, and retry. If locked out, use Forgot Password with OTP. Repeated failures may indicate a security lock we can review after verification.",
+    "structured": {},
+    "keywords": [
+      "app not working",
+      "login failed",
+      "cant login",
+      "locked out"
+    ],
+    "related_intents": [
+      "SEC-003",
+      "SEC-004"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-TRB-006",
+    "category": "troubleshooting",
+    "title": "Statement not downloading",
+    "body": "Try a shorter date range, switch format (PDF/Excel), and ensure sufficient device storage. We can also email the statement to your registered address.",
+    "structured": {
+      "alt": "email statement"
+    },
+    "keywords": [
+      "statement not downloading",
+      "cant download statement"
+    ],
+    "related_intents": [
+      "ACC-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-ESC-001",
+    "category": "escalation",
+    "title": "When to escalate to Fraud team",
+    "body": "Confirmed or suspected fraud, unauthorised transactions, or stolen card details are escalated immediately (P0) to the Fraud Investigation team after taking protective action (card block).",
+    "structured": {
+      "priority": "P0",
+      "queue": "Fraud Investigation"
+    },
+    "keywords": [
+      "fraud escalation",
+      "unauthorised",
+      "stolen card"
+    ],
+    "related_intents": [
+      "SEC-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Escalation matrix",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-ESC-002",
+    "category": "escalation",
+    "title": "Investment advisory handoff",
+    "body": "Requests for personalised investment advice are routed to a SEBI-registered advisor via a free consultation. NEXA provides factual product info only.",
+    "structured": {
+      "priority": "P1",
+      "queue": "Wealth Advisory"
+    },
+    "keywords": [
+      "advisor",
+      "investment advice",
+      "sebi consultation"
+    ],
+    "related_intents": [
+      "PRD-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": "SEBI-ROBO-2024",
+    "authority_source": "NexBank Escalation matrix",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-ESC-003",
+    "category": "escalation",
+    "title": "High-value account closure",
+    "body": "Closure requests for accounts above Rs 5 lakh are routed to a Relationship Manager for retention contact and branch verification before processing.",
+    "structured": {
+      "priority": "P1",
+      "queue": "Relationship Manager",
+      "threshold": 500000
+    },
+    "keywords": [
+      "high value closure",
+      "relationship manager",
+      "close account"
+    ],
+    "related_intents": [
+      "ACC-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Escalation matrix",
+    "min_auth_level": "full_kyc",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-ESC-004",
+    "category": "escalation",
+    "title": "Regulatory uncertainty handoff",
+    "body": "If a regulatory question cannot be answered confidently from current, non-expired knowledge, NEXA does not guess; it routes to the Compliance Helpdesk.",
+    "structured": {
+      "priority": "P1",
+      "queue": "Compliance Helpdesk"
+    },
+    "keywords": [
+      "regulatory question",
+      "compliance",
+      "uncertain"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "CMP-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Escalation matrix",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-ESC-005",
+    "category": "escalation",
+    "title": "Vulnerable customer / crisis",
+    "body": "Any mention of self-harm, threats, or emergencies is handled with empathy and routed immediately to the Crisis Response protocol; banking flow is paused.",
+    "structured": {
+      "priority": "P0",
+      "queue": "Crisis Response"
+    },
+    "keywords": [
+      "self harm",
+      "emergency",
+      "crisis",
+      "threat"
+    ],
+    "related_intents": [
+      "CMP-003"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Escalation matrix",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-017",
+    "category": "product",
+    "title": "Salary account features",
+    "body": "NexBank salary accounts offer zero balance, free unlimited transactions, and preferential loan rates. Conversion from savings is available.",
+    "structured": {
+      "min_balance": 0,
+      "perks": [
+        "free transactions",
+        "preferential rates"
+      ]
+    },
+    "keywords": [
+      "salary account",
+      "zero balance",
+      "convert account"
+    ],
+    "related_intents": [
+      "ACC-007",
+      "PRD-001"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Product Catalogue v2026.8",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-PRD-018",
+    "category": "product",
+    "title": "Forex rate availability",
+    "body": "Live USD/INR and other FX rates are available on the NexBank platform and app. We provide the current rate as information; we do not advise on currency timing.",
+    "structured": {
+      "info_only": true
+    },
+    "keywords": [
+      "forex",
+      "usd inr",
+      "exchange rate",
+      "currency"
+    ],
+    "related_intents": [
+      "PRD-001",
+      "TXN-006"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 7,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Treasury",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-013",
+    "category": "policy",
+    "title": "Provisional credit for disputes",
+    "body": "For eligible disputed debit transactions, provisional credit may be granted during investigation per RBI TAT norms, and is reversed only if the dispute is found invalid.",
+    "structured": {
+      "provisional_credit": "eligible per RBI TAT"
+    },
+    "keywords": [
+      "provisional credit",
+      "dispute refund",
+      "tat"
+    ],
+    "related_intents": [
+      "TXN-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 30,
+    "regulatory_tag": "RBI-DPSC-2024",
+    "authority_source": "RBI TAT norms",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-POL-014",
+    "category": "policy",
+    "title": "Complaint resolution SLA",
+    "body": "Complaints are acknowledged immediately and targeted for resolution within defined SLAs by category; you receive a complaint ID and SMS updates at each stage.",
+    "structured": {
+      "ack": "immediate",
+      "updates": "SMS"
+    },
+    "keywords": [
+      "complaint sla",
+      "resolution time",
+      "complaint update"
+    ],
+    "related_intents": [
+      "CMP-001",
+      "CMP-002"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 90,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Service policy",
+    "min_auth_level": "otp_verified",
+    "sensitivity": "internal",
+    "approved_by": "product-owner",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-011",
+    "category": "faq",
+    "title": "How to talk to a human agent",
+    "body": "You can ask for a human agent at any time and we will connect you to the next available representative or arrange a callback if outside working hours.",
+    "structured": {
+      "human_on_request": true
+    },
+    "keywords": [
+      "human agent",
+      "talk to person",
+      "representative",
+      "callback"
+    ],
+    "related_intents": [
+      "GEN-003",
+      "CMP-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": "RBI-RESP-AI-2025",
+    "authority_source": "NexBank Service policy",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "RC-fast-track",
+    "supersedes": null
+  },
+  {
+    "id": "KB-FAQ-012",
+    "category": "faq",
+    "title": "Working hours and availability",
+    "body": "The NEXA assistant is available 24x7. Human specialist teams operate 9am-9pm IST; urgent security and fraud support is available round the clock.",
+    "structured": {
+      "ai": "24x7",
+      "human": "9-21 IST",
+      "fraud": "24x7"
+    },
+    "keywords": [
+      "working hours",
+      "availability",
+      "24x7",
+      "timing"
+    ],
+    "related_intents": [
+      "GEN-002",
+      "CMP-005"
+    ],
+    "version": "1.0.0",
+    "effective_from": "2026-08-01",
+    "freshness_ttl_days": 180,
+    "regulatory_tag": null,
+    "authority_source": "NexBank Help Centre",
+    "min_auth_level": "anonymous",
+    "sensitivity": "public",
+    "approved_by": "product-owner",
+    "supersedes": null
+  }
+]

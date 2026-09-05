@@ -1,0 +1,17 @@
+stateDiagram-v2
+    [*] --> Greeting
+    Greeting --> Understanding: customer states need
+    Understanding --> Authenticating: account-specific action
+    Understanding --> Fulfilling: public info / product fact
+    Understanding --> Clarifying: low confidence
+    Clarifying --> Understanding: reformulated
+    Clarifying --> Escalation: max clarifications reached
+    Authenticating --> Fulfilling: identity verified
+    Authenticating --> Escalation: repeated auth failure
+    Fulfilling --> Confirming: action / answer delivered
+    Confirming --> Understanding: another request
+    Confirming --> Closing: nothing further
+    Understanding --> Escalation: hard trigger (fraud, crisis, advice, grievance)
+    Fulfilling --> Escalation: hard trigger
+    Escalation --> Closing: handed off with context package
+    Closing --> [*]

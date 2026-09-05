@@ -1,0 +1,35 @@
+flowchart TD
+    IN[User message] --> D0{Oversize or flood?}
+    D0 -->|yes| DOS[Throttle + clarify · dos_mitigated]
+    D0 -->|no| D1{Data exfiltration?}
+    D1 -->|yes| RXF[Refuse · exfiltration_blocked]
+    D1 -->|no| D2{Prompt injection?}
+    D2 -->|yes| RIJ[Stay NEXA · injection_detected]
+    D2 -->|no| D3{Jailbreak / role-play?}
+    D3 -->|yes| RJB[Hold the line · jailbreak_detected]
+    D3 -->|no| D4{Social engineering?}
+    D4 -->|yes| RSE[Refuse access · social_engineering_detected]
+    D4 -->|no| D5{Volunteered credential?}
+    D5 -->|yes| RCR[Warn + do not store · credential_refused]
+    D5 -->|no| D6{Fraud or crisis?}
+    D6 -->|yes| ESC[Hard escalation · ESC-001 / ESC-003]
+    D6 -->|no| D7{PII disclosure request?}
+    D7 -->|yes| RPII[Last-4 only · pii_protected]
+    D7 -->|no| D8{Money movement?}
+    D8 -->|yes| RMON[Guide, never move · money_refused]
+    D8 -->|no| D9{Cross-customer access?}
+    D9 -->|yes| RXC[Own account only · cross_customer_refused]
+    D9 -->|no| D10{Regulated? AML / PEP / UPI / loan / grievance}
+    D10 -->|yes| RREG[Regulated response + flag]
+    D10 -->|no| D11{Financial advice?}
+    D11 -->|yes| RADV[Facts + advisor, no rec · advice_blocked]
+    D11 -->|no| INT[Classify intent]
+
+    INT --> AU{Auth sufficient and fresh?}
+    AU -->|no| STEP[Step-up / re-auth · auth_required]
+    AU -->|yes| SERVE[Answer from KB facts · masked]
+
+    classDef refuse fill:#fde8e8,stroke:#c0392b,color:#7b241c;
+    classDef ok fill:#e8f8ef,stroke:#1e8449,color:#145a32;
+    class DOS,RXF,RIJ,RJB,RSE,RCR,RPII,RMON,RXC,RREG,RADV,ESC,STEP refuse;
+    class SERVE ok;

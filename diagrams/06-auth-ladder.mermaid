@@ -1,0 +1,25 @@
+flowchart TD
+    subgraph LADDER[Authentication levels - compared by rank]
+        L0[anonymous · rank 0]
+        L1[otp_verified · rank 1]
+        L2[biometric_verified · rank 2]
+        L3[full_kyc · rank 3]
+        L0 --> L1 --> L2 --> L3
+    end
+
+    subgraph NEEDS[Minimum level per action]
+        N0[Public info - product facts, rates, EMI math → anonymous]
+        N1[Account balance, transactions, card block → otp_verified]
+        N3[Profile change, mobile / email update, limit increase → full_kyc]
+    end
+
+    REQ[Incoming request] --> MAP[Map intent to required level]
+    MAP --> CMP{current rank ≥ required rank?}
+    CMP -->|yes, and not expired| SERVE[Proceed to fulfilment]
+    CMP -->|no| STEP[Step-up authentication · auth_required]
+    CMP -->|session idle-timed-out| REAUTH[Re-authenticate · timeout]
+
+    classDef ok fill:#e8f8ef,stroke:#1e8449,color:#145a32;
+    classDef refuse fill:#fde8e8,stroke:#c0392b,color:#7b241c;
+    class SERVE ok;
+    class STEP,REAUTH refuse;

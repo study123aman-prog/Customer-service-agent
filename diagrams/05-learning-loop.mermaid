@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph LIVE[Runtime]
+        INT[Interactions] --> AUD[(Audit log - masked)]
+        AUD --> SIG[Signal mining - CSAT, containment, fallbacks, corrections]
+    end
+
+    SIG --> CAND[Candidate change - policy weights, templates, KB facts, NLU examples]
+    CAND --> REV{Human review + sign-off}
+    REV -->|rejected| ARCH[Archive with reason]
+    REV -->|approved| GATE{{Safety suite - 100 percent must pass}}
+
+    GATE -->|any fail| BLOCK[Blocked - cannot ship]
+    GATE -->|all pass| CAN[Canary - small traffic slice]
+    CAN --> MON{Metrics healthy?}
+    MON -->|regressed| RB[Auto rollback]
+    MON -->|healthy| PROMO[Promote to 100 percent]
+    PROMO --> VER[Versioned release + changelog]
+
+    RB --> ARCH
+    BLOCK --> ARCH
+
+    NOTE[Immutable hard-safety rules are out of scope for learning] -.-> GATE
+
+    classDef stop fill:#fde8e8,stroke:#c0392b,color:#7b241c;
+    classDef go fill:#e8f8ef,stroke:#1e8449,color:#145a32;
+    class BLOCK,RB stop;
+    class PROMO,VER go;

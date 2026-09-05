@@ -1,0 +1,69 @@
+{
+  "_about": "Central runtime configuration for the NEXA reference demo. Every tunable threshold lives here so nothing is hard-coded in logic. Immutable SAFETY rules are NOT in this file by design — they live in code (C6) and cannot be tuned. See docs/learning-pipeline for what may change and how.",
+  "version": "1.1",
+  "persona": {
+    "name": "NEXA",
+    "full_name": "NexBank Expert Assistant",
+    "voice": "friendly, trustworthy, modern",
+    "languages": ["en", "hinglish"]
+  },
+  "nlu_confidence": {
+    "_note": "Hierarchical intent thresholds; a classification below primary triggers a clarify.",
+    "primary_min": 0.60,
+    "secondary_min": 0.70,
+    "tertiary_min": 0.75,
+    "margin_min": 0.15
+  },
+  "retrieval": {
+    "_note": "Hybrid dense+sparse with Reciprocal Rank Fusion, then cross-encoder re-rank.",
+    "w_dense": 0.6,
+    "w_sparse": 0.4,
+    "top_k_candidates": 20,
+    "top_k_return": 3,
+    "rrf_k": 60,
+    "cross_encoder_rerank": true,
+    "latency_budget_ms_p95": 200,
+    "retrieval_confidence_threshold": 0.45
+  },
+  "dialogue": {
+    "_note": "Flow control for clarification and confirmation.",
+    "max_clarifications": 2,
+    "confirm_before_consequential": true
+  },
+  "authentication": {
+    "_note": "Auth ladder low->high; each intent declares a minimum level.",
+    "levels": ["anonymous", "otp_verified", "biometric_verified", "full_kyc"],
+    "session_timeout_minutes": 5
+  },
+  "escalation": {
+    "_note": "Soft escalation fires when proximity crosses threshold; hard triggers ignore this and fire immediately.",
+    "proximity_threshold": 0.7,
+    "frustration_sentiment_threshold": -0.5,
+    "hard_triggers": ["ESC-001", "ESC-003", "ESC-005", "ESC-008", "ESC-009", "ESC-010", "ESC-011", "ESC-013", "ESC-014", "ESC-015"],
+    "soft_triggers": ["ESC-002", "ESC-004", "ESC-006", "ESC-007", "ESC-012"]
+  },
+  "safety": {
+    "_note": "Detection support only; the actual blocks are immutable code in C6. These lists make the demo's detection transparent for the viva.",
+    "advice_lexicon": ["should i", "should we", "which is best for me", "best for me", "best credit card for me", "recommend", "advise me", "what would you pick", "would pick", "what should i do", "good time to buy", "good time to sell", "is it a good time"],
+    "personal_signal_lexicon": ["my salary", "i earn", "i'm 2", "i am 2", "i'm 3", "i am 3", "i'm 4", "i am 4", "i'm 5", "i am 5", "my age", "for me", "my situation", "my goal", "lakh savings", "my savings", "i have kids", "two kids", "dependents", "bonus"],
+    "injection_lexicon": ["ignore all previous", "ignore previous instructions", "ignore your rules", "ignore the rules", "you are now", "system:", "</system>", "new directive", "disable all", "override", "developer assistant", "debug mode", "no restrictions"],
+    "jailbreak_lexicon": ["dan mode", "you are dan", "safety is off", "safety switched off", "pretend safety", "hypothetically", "if you could give", "act as her", "act as my"],
+    "exfil_lexicon": ["system prompt", "your instructions", "training data", "records you were trained", "repeat everything", "repeat everything above", "in base64", "your configuration"],
+    "social_eng_lexicon": ["internal audit", "employee id", "i'm a police", "i am a police", "police officer", "grant me admin", "admin access", "i'm an auditor", "i am an auditor", "give me access"],
+    "credential_lexicon": ["my password is", "my pin is", "netbanking password", "the otp i", "otp is", "cvv is", "cvv "],
+    "money_move_lexicon": ["transfer", "pay my", "send money", "reverse that payment", "send the money back", "make a payment"],
+    "cross_customer_lexicon": ["my wife's", "my husband's", "my father's", "my mother's", "my son's", "my daughter's", "power of attorney", "for account holder", "her account", "his account", "their account", "customer id"],
+    "aml_structuring_lexicon": ["split", "smaller amounts", "avoid reporting", "avoid the report", "without reporting", "break up the deposit"],
+    "pep_lexicon": ["member of parliament", "sitting mp", "minister", "politically exposed", "i'm an mla", "i am an mla"],
+    "max_input_chars": 1200,
+    "guardrail_strictness_level": "HIGH"
+  },
+  "targets": {
+    "_note": "Reference only; measured on the metrics dashboard, not enforced by the demo.",
+    "containment_min": 0.70,
+    "csat_min": 4.5,
+    "incorrect_advice_max": 0.0,
+    "first_response_seconds_max": 30,
+    "technical_p95_seconds_max": 3
+  }
+}

@@ -1,0 +1,33 @@
+flowchart TB
+    subgraph CH[Customer Channels]
+        A1[App chat]
+        A2[Web widget]
+        A3[WhatsApp]
+        A4[Voice / IVR]
+    end
+
+    CH --> ORC[Orchestrator]
+    ORC --> C2{{C2 - Input Safety}}
+    C2 -->|attack detected| C6
+    C2 -->|clean| NLU[NLU - intent, entities, sentiment]
+
+    NLU --> DSM[Dialogue State Manager]
+    DSM --> POL[Dialogue Policy]
+    POL --> AUTH{Auth level sufficient?}
+    AUTH -->|no| STEP[Step-up authentication]
+    AUTH -->|yes| RET[Hybrid Retrieval]
+    RET --> KB[(Knowledge Base - structured facts)]
+    RET --> GEN[Template-first Generation]
+
+    GEN --> C6{{C6 - Immutable Safety Layer}}
+    STEP --> C6
+    C6 -->|hard trigger| ESC[Escalate to human]
+    C6 -->|safe| C10{{C10 - Output Safety}}
+    C10 --> RESP[Response to customer]
+
+    RESP --> AUD[(Audit Log - masked at source)]
+    ESC --> AUD
+    AUD --> LRN[Continuous Learning]
+
+    LRN -.->|tunes soft policy only| POL
+    LRN -.->|blocked by design - cannot alter| C6
